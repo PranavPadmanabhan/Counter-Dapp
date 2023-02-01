@@ -79,12 +79,10 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (user) {
-      getCount();
-      listenDecrement();
-      listenIncrement();
-    }
-  }, []);
+    getCount();
+    listenDecrement();
+    listenIncrement();
+  }, [user]);
 
   const getCount = async () => {
     const provider = new ethers.providers.JsonRpcProvider(
