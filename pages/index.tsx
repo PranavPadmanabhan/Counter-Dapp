@@ -14,47 +14,72 @@ export default function Home() {
   const { openConnectModal } = useConnectModal();
   const { openAccountModal } = useAccountModal();
 
-  const address = "0x18ab687dE63aDa2716fDA34963ca9bCBA3e0dACe";
+  const address = "0xFE2BF105fdD183131dDB1215fCC6B4966c33ab09";
   const abi = [
     {
-      inputs: [],
-      name: "decrement",
-      outputs: [],
-      stateMutability: "nonpayable",
-      type: "function",
+      "inputs": [],
+      "name": "automate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      anonymous: false,
-      inputs: [],
-      name: "Decremented",
-      type: "event",
+      "inputs": [],
+      "name": "decrement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      inputs: [],
-      name: "increment",
-      outputs: [],
-      stateMutability: "nonpayable",
-      type: "function",
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
     },
     {
-      anonymous: false,
-      inputs: [],
-      name: "Incremented",
-      type: "event",
+      "anonymous": false,
+      "inputs": [],
+      "name": "Decremented",
+      "type": "event"
     },
     {
-      inputs: [],
-      name: "count",
-      outputs: [
+      "inputs": [],
+      "name": "increment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Incremented",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "checkAutomationStatus",
+      "outputs": [
         {
-          internalType: "uint256",
-          name: "",
-          type: "uint256",
-        },
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
       ],
-      stateMutability: "view",
-      type: "function",
+      "stateMutability": "view",
+      "type": "function"
     },
+    {
+      "inputs": [],
+      "name": "count",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
   ];
 
   const listenIncrement = async () => {
